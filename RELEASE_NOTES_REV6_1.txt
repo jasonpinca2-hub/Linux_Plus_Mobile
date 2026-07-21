@@ -1,0 +1,32 @@
+Linux+ XK0-006 Certification Trainer — Rev 6.1
+Release date: 2026-07-21
+
+CONTENT
+- Questions 1–25 reviewed and enriched.
+- Added question-specific explanations for every answer option.
+- Added memory tips and exam traps.
+- Added command/manual reference lists.
+- Added objective, topic, difficulty, and verification metadata.
+
+APP CHANGES
+- Verified status appears beside reviewed questions.
+- Pending-review status appears on remaining questions.
+- Enhanced feedback panel shows:
+  * Correct answer
+  * Why it is correct
+  * Why each alternative is wrong
+  * Memory tip
+  * Exam trap
+  * References
+  * Review date
+- Updated PWA cache name so iPhone installations receive the new files.
+
+SCOPE
+- Detailed review is complete for Questions 1–25 only.
+- Questions 26–147 retain the existing explanations and are clearly marked pending detailed review.
+
+INSTALL/UPDATE
+1. Replace the files in the GitHub repository with this package.
+2. Commit the changes to main.
+3. Open the GitHub Pages site in Safari.
+4. Refresh once. If the installed Home Screen app remains old, close it fully and reopen it.
