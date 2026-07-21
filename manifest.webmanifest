@@ -1,7 +1,7 @@
 {
   "name": "Linux+ XK0-006 Certification Trainer",
   "short_name": "Linux+ Trainer",
-  "description": "Offline Linux+ XK0-006 trainer, Rev 6.3, with 147 questions and reviewed Questions 1–50.",
+  "description": "Offline Linux+ XK0-006 trainer, Rev 6.5 First-Attempt Study Edition, with 147 questions and reviewed Questions 1\u201350.",
   "id": "./index.html",
   "start_url": "./index.html",
   "scope": "./",
@@ -23,5 +23,5 @@
       "purpose": "any maskable"
     }
   ],
-  "version": "6.3.0"
+  "version": "6.5.0"
 }

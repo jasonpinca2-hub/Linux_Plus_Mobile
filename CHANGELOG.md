@@ -16,3 +16,13 @@
 
 ### Preserved
 - All 147 questions, existing reviewed content through Question 50, saved browser progress, exam grading, filters, search, dashboard, theme support, installation, and offline operation.
+
+
+## 6.4.0 — First-Attempt Study Edition
+- Added Favorites, Quick 10, Recent Misses, streak tracking, exam history, best score, and questions-practiced dashboard.
+- Preserved existing filters, search, grading, review, saved progress, and offline support.
+
+## Rev 6.5 — 2026-07-21
+- Added Linux Coach, objective mastery tracking, Smart Review, Command Center v1, and Last-Hour Cram.
+- Preserved Rev 6.4 progress and study tools.
+- Updated PWA cache version for reliable deployment.
