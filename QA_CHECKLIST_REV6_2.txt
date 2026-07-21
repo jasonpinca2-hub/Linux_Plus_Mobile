@@ -1,0 +1,12 @@
+REV 6.2 QA CHECKLIST
+
+1. Extract the ZIP.
+2. Copy all contents into the existing local repository folder and choose Replace.
+3. Commit and push using GitHub Desktop.
+4. Confirm GitHub Pages deploys.
+5. Refresh Safari and verify the header shows Rev 6.2.
+6. Test Objective and Difficulty filters.
+7. Confirm Questions 1–50 show Reviewed.
+8. Check Question 26–50 and confirm the detailed review panel appears.
+9. Confirm later questions show Pending review.
+10. Close and reopen the Home Screen app to verify offline loading.

@@ -1,4 +1,4 @@
-const CACHE_NAME = "linuxplus-trainer-rev6-2";
+const CACHE_NAME = "linuxplus-trainer-pwa-v1";
 const APP_FILES = [
   "./START_HERE_iPhone.html",
   "./assets/m10_q10_0.jpeg",

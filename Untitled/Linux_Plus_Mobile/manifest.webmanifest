@@ -1,7 +1,7 @@
 {
   "name": "Linux+ XK0-006 Certification Trainer",
   "short_name": "Linux+ Trainer",
-  "description": "Offline Linux+ XK0-006 trainer with 147 questions; Questions 1\u201350 reviewed and enriched.",
+  "description": "Offline Linux+ XK0-006 practice exam with 147 verified questions and explanations.",
   "id": "./index.html",
   "start_url": "./index.html",
   "scope": "./",
