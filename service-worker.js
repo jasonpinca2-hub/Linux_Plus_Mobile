@@ -1,6 +1,15 @@
-const CACHE_NAME = "linuxplus-trainer-rev6-2";
+const CACHE_NAME = "linuxplus-trainer-rev6-3";
 const APP_FILES = [
+  "./",
+  "./index.html",
   "./START_HERE_iPhone.html",
+  "./manifest.webmanifest",
+  "./css/styles.css",
+  "./js/app.js",
+  "./js/pwa.js",
+  "./icons/apple-touch-icon.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
   "./assets/m10_q10_0.jpeg",
   "./assets/m10_q12_0.jpeg",
   "./assets/m10_q14_0.jpeg",
@@ -35,13 +44,50 @@ const APP_FILES = [
   "./assets/m8_q14_0.jpeg",
   "./assets/m8_q5_0.jpeg",
   "./assets/m8_q6_0.jpeg",
-  "./assets/m8_q7_0.jpeg",
-  "./icons/apple-touch-icon.png",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
-  "./index.html",
-  "./manifest.webmanifest"
+  "./assets/m8_q7_0.jpeg"
 ];
-self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)).then(() => self.skipWaiting())); });
-self.addEventListener('activate', event => { event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim())); });
-self.addEventListener('fetch', event => { if(event.request.method !== 'GET') return; event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => { const copy=response.clone(); caches.open(CACHE_NAME).then(cache => cache.put(event.request,copy)); return response; }).catch(() => caches.match('./index.html')))); });
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(APP_FILES))
+      .then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+
+  // Network-first for page navigations so new GitHub Pages revisions appear promptly.
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put('./index.html', copy));
+          return response;
+        })
+        .catch(() => caches.match('./index.html'))
+    );
+    return;
+  }
+
+  // Cache-first for stable app assets, with background cache population.
+  event.respondWith(
+    caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
+      if (response && response.status === 200) {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
+      }
+      return response;
+    }))
+  );
+});
