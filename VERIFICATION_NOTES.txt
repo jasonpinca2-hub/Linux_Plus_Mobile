@@ -1,0 +1,26 @@
+Revision 3.1 verification corrections
+
+- m2q9: changed privileged RHEL group from sudo to wheel.
+- m2q10: added required username operand to chage.
+- m5q1: corrected gzip/tar extraction pipeline and destination syntax.
+- m6q3: corrected python3-openssl spelling.
+- m6q5: replaced invalid advisory option with valid dnf upgrade syntax.
+- m7q1: clarified whole-disk overwrite and changed target to /dev/sda.
+- m7q3: clarified shred applies to regular files and has storage limitations.
+- m9q2: removed answer-key contamination from distractor text.
+- m9q6: corrected systemctl --type=service syntax.
+- m10q27: corrected UFW source-network/port syntax.
+- m11q5: corrected semanage spelling and port subcommand.
+- m11q7: replaced deprecated pam_tally with pam_faillock for modern RHEL.
+- m13q6: made destructive Git reset command explicit.
+- m13q16: corrected Python 3 executable name.
+- m13q18: replaced unsafe grep/kill loop with pkill -u.
+- m14q2: normalized Docker image name and latest tag.
+
+Reference families used:
+- RHEL 9 Configuring basic system settings
+- RHEL 9 Configuring and managing networking
+- RHEL 9 Managing file systems
+- RHEL 9 Using SELinux
+- RHEL 9 Building, running, and managing containers
+- Current command semantics for distro-specific APT, Netplan, UFW, Docker, Git, Python, and shell questions
