@@ -40,3 +40,8 @@
 - Added per-question confidence ratings stored locally.
 - Added stronger explanations for incorrect choices.
 - Added objective-area and confidence-aware study guidance to answer feedback.
+
+## Rev 7.0
+- Added Mistake Notebook and Smart Favorites.
+- Added per-question attempts, misses, correct streaks, mastery, dates, confidence signals, and personal notes.
+- Added targeted practice modes for needs-review, mistakes, and low-confidence questions.
