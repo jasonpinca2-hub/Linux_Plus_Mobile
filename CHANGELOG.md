@@ -30,3 +30,8 @@
 - Added Linux Coach, objective mastery tracking, Smart Review, Command Center v1, and Last-Hour Cram.
 - Preserved Rev 6.4 progress and study tools.
 - Updated PWA cache version for reliable deployment.
+
+## Rev 6.8 — 2026-07-22
+- Added a confirmed Exit Exam action that returns directly to Exam Setup.
+- Exiting skips grading and does not record a score or mastery result.
+- Fixed the header New Exam action restoring the same unfinished attempt.
