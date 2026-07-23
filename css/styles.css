@@ -121,3 +121,12 @@ button,.option,label,input,select{-webkit-tap-highlight-color:transparent;touch-
 .exit-exam-btn{border-color:#ef4444;color:#fecaca}
 body.light .exit-exam-btn{color:#b91c1c;border-color:#dc2626}
 @media (max-width:700px){.question-tools .btn{flex:1 1 auto}.exit-exam-btn{min-height:46px}}
+
+/* Rev 6.9: confidence-based learning review */
+.confidence-panel{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:10px 0 18px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--panel-soft,rgba(127,127,127,.08))}
+.confidence-label{font-weight:800}
+.confidence-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.confidence-btn{padding:8px 12px}
+.confidence-btn.selected{outline:3px solid rgba(59,130,246,.35);border-color:#60a5fa;background:rgba(59,130,246,.16)}
+.rev69-learning-meta{margin-top:14px;padding:14px;border-left:4px solid #60a5fa;border-radius:10px;background:rgba(59,130,246,.08);display:grid;gap:7px}
+@media(max-width:640px){.confidence-panel{align-items:stretch}.confidence-buttons{display:grid;grid-template-columns:1fr 1fr 1fr;width:100%}.confidence-btn{font-size:.86rem;padding:10px 5px}}

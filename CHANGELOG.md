@@ -35,3 +35,8 @@
 - Added a confirmed Exit Exam action that returns directly to Exam Setup.
 - Exiting skips grading and does not record a score or mastery result.
 - Fixed the header New Exam action restoring the same unfinished attempt.
+
+## Rev 6.9
+- Added per-question confidence ratings stored locally.
+- Added stronger explanations for incorrect choices.
+- Added objective-area and confidence-aware study guidance to answer feedback.

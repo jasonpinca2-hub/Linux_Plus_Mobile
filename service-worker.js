@@ -1,4 +1,4 @@
-const CACHE_NAME = "linuxplus-trainer-rev6-8";
+const CACHE_NAME = "linuxplus-rev69";
 const APP_FILES = [
   "./",
   "./index.html",
@@ -12,6 +12,7 @@ const APP_FILES = [
   "./js/rev66.js",
   "./js/rev67.js",
   "./js/rev68.js",
+  "./js/rev69.js",
   "./icons/apple-touch-icon.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
