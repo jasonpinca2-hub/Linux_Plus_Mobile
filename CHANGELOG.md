@@ -1,3 +1,7 @@
+## Rev 6.7
+- Added short explanations for every correct answer across the full question bank.
+- Replaced generic correct-answer confirmation with concept-specific reasoning.
+
 # Changelog
 
 ## 6.3.0 — 2026-07-21
